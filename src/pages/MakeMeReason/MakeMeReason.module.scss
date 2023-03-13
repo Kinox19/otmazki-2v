@@ -1,0 +1,28 @@
+.Reason__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Reason__heading{
+    margin: 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.Reason__hint{
+    margin: 0;
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #fff;
+}

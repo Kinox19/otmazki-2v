@@ -1,0 +1,19 @@
+@import '~normalize.css';
+
+body{
+    font-family: 'Montserrat';
+
+    background-color: #3164F5;
+
+    min-height: 100vh;
+    display: flex;
+
+
+    justify-content: center;
+
+    
+}
+
+body::before, ::after {
+    box-sizing: border-box;
+}
