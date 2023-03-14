@@ -7,6 +7,7 @@ import mod from '../Shared/Button_whiteBg/Button__whiteBg_result.module.scss'
 import infoIcon from '../../assets/images/Result/icons/info-icon.png'
 
 export const ResultPage = () => {
+
   return (
     <div className={s.Result__container}>
         <Header/>

@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Hey, it's Otmazki
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is about creating silly copouts and their use [Otmazki.me](https://otmazki.me).
 
-## Available Scripts
+## Project features
 
-In the project directory, you can run:
+Create excuses for every occasion
 
-### `npm start`
+Didn't write the code on time?
+### `IT Copout`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I don't want to clean my apartment...
+### `Household Copout`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Slept through an important meeting at the office?
+### `Business Copout`
 
-### `npm test`
+Don't like a friend's idea?
+### `Friend Copout`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Are you sad? Answer correctly!
+### `Sad Copout`
 
-### `npm run build`
+You are a child? Okay, we won't tell your parents, the tab with that movie opened by itself.
+### `Children Copout`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We love stupid jokes. Here, get it and sign
+### `Funny Copout`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**And it's just the top of the iceberg. Try it yourself!**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Can your copout's offend?
 
-### `npm run eject`
+Unfortunately yes, so please, be careful with sending it's to your KGB or FBI agent. It hurt's sometimes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Who make's your copout's?
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Our team and AI technologies. Maybe.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Привет, это Отмазки
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Этот проект посвящен созданию глупых отмазок и их использованию [Otmazki.me](https://otmazki.me).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Особенности проекта
 
-### Code Splitting
+Создавайте оправдания на все случаи жизни
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Не написал код вовремя?
+### `Айти отмазка`
 
-### Analyzing the Bundle Size
+Я не хочу убирать свою квартиру...
+### `Бытовая отмазка`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Проспали важную встречу в офисе?
+### `Бизнес отмазка`
 
-### Making a Progressive Web App
+Не нравится идея друга?
+### `Дружеская отмазка`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Тебе грустно? Ответь правильно!
+### `Грустная отговорка`
 
-### Advanced Configuration
+Ты ребенок? Ладно, родителям не скажем, вкладка с этим фильмом открылась сама собой.
+### `Детская отмазка`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Мы любим глупые шутки. Вот возьми и распишись.
+### `Смешная отмазка`
 
-### Deployment
+**И это только верхушка айсберга. Попробуй сам!**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Может ли ваша отмазка оскорбить?
 
-### `npm run build` fails to minify
+К сожалению, да, поэтому, пожалуйста, будьте осторожны, отправляя его своему агенту КГБ или ФБР. Иногда это больно.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Кто делает ваши отмазки?
+
+Наша команда и технологии ИИ. Может быть.
