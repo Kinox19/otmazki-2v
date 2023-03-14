@@ -40,34 +40,34 @@ const colorStyles={
     color: 0 ? '#fff' : '#fff',
   }),
 
-  dropdownIndicator: (provided) => ({
-    ...provided,
-    color: '#fff',
-  }),
-
-  dropdownIndicator: (provided, {isFocused}) => ({
+  dropdownIndicator: (provided, { isFocused }) => ({
     ...provided,
     color: isFocused ? '#fff' : '#fff',
     '&:hover': {
-        color: '#FFF'
-      }
-  }),
+      color: '#FFF'
+    }
+  })
 };
 
 export const MakeMeReason = () => {
   return (
     <div className={s.Reason__container}>
       <Header/>
-      <h2 className={s.Reason__heading}>Расскажите нам, что вы не сделали?</h2>
-      <p className={s.Reason__hint}>Выберите стиль желаемой отмазки</p>
+      <div className={s.Reason__content}>
+        <h2 className={s.Reason__heading}>Расскажите нам, что вы не сделали?</h2>
+        <p className={s.Reason__hint}>Выберите стиль желаемой отмазки</p>
 
-      <Select
-        styles={colorStyles}
-        options={options}
-        isSearchable={false}
+        <Select
+          styles={colorStyles}
+          options={options}
+          isSearchable={false}
+          defaultValue={options[4]}
         />
 
-      <button className={style.Button__whiteBg}>Придумать отмазку</button>
+        <input className={s.Reason__input}></input>
+
+        <button className={style.Button__whiteBg}>Придумать отмазку</button>
+      </div>
       <Footer/>
     </div>
   )

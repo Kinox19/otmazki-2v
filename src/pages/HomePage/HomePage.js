@@ -8,7 +8,6 @@ import style from '../Shared/Button_whiteBg/Button__whiteBg.module.scss'
 export const HomePage = () => {
   return (
     <div className={s.HomePage__page}>
-      <Header/>
       <div className={s.HomePage__container}>
         <div className={s.text__container}>
           <p className={s.text__upper}>otmazka - сервис для исключительного случая, как сегодня. Или еще завтра... может лучше отдохнуть?</p>
