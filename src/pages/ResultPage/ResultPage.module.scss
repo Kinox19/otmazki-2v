@@ -38,7 +38,7 @@
     -o-transition: 0.5s;
 }
 
-.Result__contenContainer{
+.Result__contentContainer{
     background-color: #4674F6;
     position: relative;
     width: 1146px;
@@ -92,3 +92,61 @@
 }
 
 
+.form__sendButton{
+    height: 42px;
+    width: 552px;
+    padding: 6px 16px 6px 16px;
+    background-color: rgba(49, 100, 245, 1);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.form__attention{
+    margin: 0;
+    color: rgba(21, 25, 32, 0.5);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.form__link{
+    text-decoration: none;
+    color: #3164F5;
+    font-style: italic;
+}
+
+.form__inputTitle{
+    margin: 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #3164F5;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.form__input{
+    width: 100%;
+    height: 56px;
+
+    border: 1px solid rgba(86, 103, 137, 0.26);
+
+    padding: 16px;
+    box-sizing: border-box;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.form__input:focus{
+    outline: 1px solid #3164F5;
+}

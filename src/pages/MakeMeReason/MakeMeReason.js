@@ -4,6 +4,9 @@ import { Header } from '../Shared/Header/Header'
 import s from './MakeMeReason.module.scss'
 import style from '../Shared/Button_whiteBg/Button__whiteBg.module.scss'
 import Select from 'react-select'
+import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
+import MakeMeReasonScripts from './MakeMeReasonScripts.js'
 
 const options = [
   { value: 'hype', label: 'Хайп' },
@@ -65,10 +68,14 @@ export const MakeMeReason = () => {
         />
 
         <input className={s.Reason__input}></input>
-
-        <button className={style.Button__whiteBg}>Придумать отмазку</button>
+          <button className={style.Button__whiteBg}>Придумать отмазку</button>
       </div>
       <Footer/>
+
+      <Helmet>
+      <title>My Title</title>
+      <script></script>
+      </Helmet>
     </div>
   )
 }

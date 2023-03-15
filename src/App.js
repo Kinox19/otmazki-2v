@@ -3,8 +3,10 @@ import s from './styles/App.scss';
 import { Routes, Route } from 'react-router';
 import { MakeMeReason } from './pages/MakeMeReason/MakeMeReason';
 import { ResultPage } from './pages/ResultPage/ResultPage';
+import React from 'react';
 
 function App() {
+  
   return (
     <div className="App">
       <Routes>
