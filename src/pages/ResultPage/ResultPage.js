@@ -52,8 +52,10 @@ const colorStyles={
   })
 };
 
-export const ResultPage = () => {
+export const ResultPage = (props) => {
   const [isModal, setModal] = React.useState(false);
+  let { inputText } = props.match.params;
+
   return (
     <div className={s.Result__container}>
         <Header/>
@@ -63,7 +65,7 @@ export const ResultPage = () => {
         <div className={s.Result__contentContainer}>
             <img className={s.Result__icon} src={infoIcon} alt='info' title='Обращаем ваше внимание, что команда otmazki очень дружелюбная и не хочет никого оскорбить.'/>
 
-            <p className={s.Result__otmazka}>Я не купил собачке корм, потому что в магазине меня обманули и продали только шоколадки и пиво :(</p>
+            <p className={s.Result__otmazka}>{inputText}</p>
 
             <button className={s.Result__copy}>Скопировать отмазку</button>
 

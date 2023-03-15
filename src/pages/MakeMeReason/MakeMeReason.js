@@ -7,6 +7,10 @@ import Select from 'react-select'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import MakeMeReasonScripts from './MakeMeReasonScripts.js'
+import { useState } from 'react'
+import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+
 
 const options = [
   { value: 'hype', label: 'Хайп' },
@@ -53,6 +57,14 @@ const colorStyles={
 };
 
 export const MakeMeReason = () => {
+  const navigate = useNavigate();
+  const [inputText, setInputText] = useState('');
+  const handleInputChange = (event) => {
+    setInputText(event.target.value);
+  };
+  const handleButtonClick = () => {
+    navigate(`/result/${inputText}`);
+  };
   return (
     <div className={s.Reason__container}>
       <Header/>
@@ -67,8 +79,8 @@ export const MakeMeReason = () => {
           defaultValue={options[4]}
         />
 
-        <input className={s.Reason__input}></input>
-          <button className={style.Button__whiteBg}>Придумать отмазку</button>
+        <input className={s.Reason__input} onChange={handleInputChange}></input>
+          <button className={style.Button__whiteBg} onClick={handleButtonClick}>Придумать отмазку</button>
       </div>
       <Footer/>
 

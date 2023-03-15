@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router';
 import { MakeMeReason } from './pages/MakeMeReason/MakeMeReason';
 import { ResultPage } from './pages/ResultPage/ResultPage';
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 function App() {
   
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/1" element={<MakeMeReason/>} />
-        <Route path="/2" element={<ResultPage/>} />
+        <Route path="/result/:inputText" element={<ResultPage/>} />
       </Routes>
     </div>
   );
