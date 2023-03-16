@@ -11,3 +11,7 @@ body{
 body::before, ::after {
     box-sizing: border-box;
 }
+
+*::selection{
+    background:  #7BA2F9;
+}

@@ -14,8 +14,10 @@ export const HomePage = () => {
           <p className={s.text__upper}>otmazka - сервис для исключительного случая, как сегодня. Или еще завтра... может лучше отдохнуть?</p>
           <h1 className={s.text__heading}>Всегда есть причина</h1>
           <p className={s.text__under}>Мы уже придумали отмазки и поделимся с вами, только тсс...</p>
-          <Link to="/1">
-            <button className={style.Button__whiteBg}>Хочу отмазку!</button>
+          <Link to="/reason">
+            <div className={s.Btn__container}>
+              <button className={style.Button__whiteBg}>Хочу отмазку</button>
+            </div>
           </Link>
         </div>
         <img className={s.HomePage__mainPic} src={mainPic} alt='Фотография классная'></img>

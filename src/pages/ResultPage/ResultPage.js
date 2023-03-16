@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import s from './ResultPage.module.scss'
 import { Footer } from '../Shared/Footer/Footer'
 import { Header } from '../Shared/Header/Header'
@@ -7,6 +7,7 @@ import mod from '../Shared/Button_whiteBg/Button__whiteBg_result.module.scss'
 import infoIcon from '../../assets/images/Result/icons/info-icon.png'
 import { Modal } from '../Shared/Modal/Modal';
 import Select from 'react-select'
+import { useLocation } from 'react-router-dom';
 
 const options = [
   { value: 'hype', label: 'Хайп' },
@@ -52,9 +53,31 @@ const colorStyles={
   })
 };
 
-export const ResultPage = (props) => {
+export const ResultPage = () => {
+  const location = useLocation();
+  const text = location.state?.text;
+  console.log(text);
+
   const [isModal, setModal] = React.useState(false);
-  let { inputText } = props.match.params;
+
+  const [buttonText, setButtonText] = useState('Скопировать отмазку');
+  const resultRef = React.useRef(null);
+  const copyBtnRef = React.useRef(null);
+
+  function copyText() {
+    const textValue = resultRef.current.textContent;
+    navigator.clipboard.writeText(textValue);
+
+    setButtonText('Скопировано!');
+    copyBtnRef.current.style.backgroundColor = '#fff';
+    copyBtnRef.current.style.color = '#4674F6';
+
+    setTimeout(() => {
+      setButtonText('Скопировать отмазку');
+        copyBtnRef.current.style.backgroundColor = 'transparent';
+        copyBtnRef.current.style.color = '#FFF';
+    }, 5000);
+  }
 
   return (
     <div className={s.Result__container}>
@@ -65,13 +88,12 @@ export const ResultPage = (props) => {
         <div className={s.Result__contentContainer}>
             <img className={s.Result__icon} src={infoIcon} alt='info' title='Обращаем ваше внимание, что команда otmazki очень дружелюбная и не хочет никого оскорбить.'/>
 
-            <p className={s.Result__otmazka}>{inputText}</p>
+            <p className={s.Result__otmazka} ref={resultRef}>{`${text}`}</p>
 
-            <button className={s.Result__copy}>Скопировать отмазку</button>
+            <button className={s.Result__copy} ref={copyBtnRef} onClick={copyText}>{buttonText}</button>
 
             <button className={ [style["Button__whiteBg"], mod["Button__whiteBg_result"] ].join(" ")}>Ещё отмазка</button>
-
-            <a className={s.Result__changeText}>Изменить текст</a>
+            <a href='/reason' className={s.Result__changeText}>Изменить текст</a>
         </div>
       </div>
       <Footer/>

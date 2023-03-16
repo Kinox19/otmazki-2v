@@ -6,7 +6,6 @@ import style from '../Shared/Button_whiteBg/Button__whiteBg.module.scss'
 import Select from 'react-select'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-import MakeMeReasonScripts from './MakeMeReasonScripts.js'
 import { useState } from 'react'
 import { Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'
@@ -56,15 +55,22 @@ const colorStyles={
   })
 };
 
+
+
 export const MakeMeReason = () => {
-  const navigate = useNavigate();
-  const [inputText, setInputText] = useState('');
-  const handleInputChange = (event) => {
-    setInputText(event.target.value);
-  };
-  const handleButtonClick = () => {
-    navigate(`/result/${inputText}`);
-  };
+
+  const inputRef = React.useRef(null);
+  let [text, setText] = React.useState('');
+
+  function getInput(){
+      const text = inputRef.current.value;
+      
+      return (text)
+  }
+
+  const [selects, setSelects]=useState();
+  console.log(selects);
+
   return (
     <div className={s.Reason__container}>
       <Header/>
@@ -73,21 +79,19 @@ export const MakeMeReason = () => {
         <p className={s.Reason__hint}>Выберите стиль желаемой отмазки</p>
 
         <Select
+          value={selects} onChange={e=>setSelects(e.target.value)}
           styles={colorStyles}
           options={options}
           isSearchable={false}
           defaultValue={options[4]}
         />
 
-        <input className={s.Reason__input} onChange={handleInputChange}></input>
-          <button className={style.Button__whiteBg} onClick={handleButtonClick}>Придумать отмазку</button>
+        <input className={s.Reason__input} ref={inputRef}></input>
+        <Link to={{pathname:'/result', state:{text}}}>
+          <button className={style.Button__whiteBg} onClick={()=>getInput()}>Придумать отмазку</button>
+        </Link>
       </div>
       <Footer/>
-
-      <Helmet>
-      <title>My Title</title>
-      <script></script>
-      </Helmet>
     </div>
   )
 }
